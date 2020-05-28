@@ -1,27 +1,15 @@
 {
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
-    "husky": "^4.2.5"
+    "semantic-release": "^17.0.8"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "version": "0.0.0-development",
+  "scripts": {
+    "semantic-release": "semantic-release"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ],
-    "rules": {
-      "subject-case": [
-        2,
-        "never",
-        [
-          "start-case",
-          "pascal-case"
-        ]
-      ]
-    }
-  }
+  "repository": "https://github.com/austinmccalley/cavern.git",
+  "name": "cavern",
+  "description": "A secure and open way to ensure your packages are safe",
+  "main": "index.js",
+  "author": "Austin M. <austin@austinmccalley.com>",
+  "license": "MIT"
 }
